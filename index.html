@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/twitter.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogging App</title>
+    <!-- Add Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-[#e6ecf0] text-[#14171a] flex flex-col justify-between min-h-screen">
+    <header class="bg-white border-b border-[#e1e8ed] p-4">
+      <div class="container mx-auto max-w-5xl px-4">
+        <h1 class="text-2xl font-bold">Blogging App</h1>
+      </div>
+    </header>
+    <main class="flex-grow bg-[#f7f9fa] p-4">
+      <div id="root" class="container mx-auto max-w-5xl px-4"></div>
+    </main>
+    <footer class="bg-white border-t border-[#e1e8ed] p-4">
+      <div class="container mx-auto max-w-5xl px-4">
+        <p class="text-sm">&copy; 2024 Blogging App. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

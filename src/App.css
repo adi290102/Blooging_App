@@ -1,0 +1,73 @@
+/* General Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #e6ecf0; /* Twitter's light gray background */
+  color: #14171a; /* Twitter's text color */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Logo Styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #1da1f2aa); /* Twitter blue for hover */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Spinning Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff; /* White card background */
+  padding: 2em;
+  border-radius: 12px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
+  transition: transform 200ms ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Text Styles */
+.read-the-docs {
+  color: #657786; /* Muted text color */
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Button Styles (Example) */
+.button {
+  background-color: #1da1f2; /* Twitter blue */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px; /* Full rounded corners for pill shape */
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+.button:hover {
+  background-color: #0a85d9; /* Darker blue on hover */
+}
